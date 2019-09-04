@@ -1,11 +1,13 @@
 const express = require('express');
 const path = require('path');
 const health = require('./service/routes/health');
+const anime = require('./service/routes/anime');
 
 const app = express();
 
 /** API ROUTES */
 app.use('/api/ping', health);
+app.use('/api/anime', anime);
 
 
 /** FRONTEND */

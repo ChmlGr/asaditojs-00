@@ -15,9 +15,32 @@
 </head>
 
 <body>
-  <h1>Hello, world!</h1>
-
+  <div class="container" style="margin-top: 30px;">
+    <div class="row">
+      <div class="col">
+        <h1>Top rated animes</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <table id="results" class="table table-striped" style="margin-top: 30px;">
+          <thead>
+            <tr>
+              <th scope="col">Cover</th>
+              <th scope="col">Titulo</th>
+              <th scope="col">Score</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
   <script src="./index.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', onLoad, false);
+  </script>
 </body>
 
 </html>
